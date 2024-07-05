@@ -9,7 +9,7 @@
 | Peersyst #4         |                   |                | ethm1p8v7k8l06q3enlknatec64zxfz6kh5g4at4uac |
 | Peersyst #5         |                   |                | ethm1vczd5fxcsv5fprkqw3quqpwf6wvkl80hpxvyfx |
 | Peersyst #6         |                   |                | ethm1e4l3nu7ggajzy2dgrczskea5ref0745g34mdc2 |
-| Ripple              | @mark.pevec_25867 |                | ethm10yzanvr4m9td526axvdfgwreqwru7pfrt8qckm |
+| Ripple              |  |                |                | ethm10yzanvr4m9td526axvdfgwreqwru7pfrt8qckm |
 | Nodies              |                   |                | ethm1n2t5mt4knwtwpws5wa74u0nlmm44vtersvvxp8 |
 | LinkPool            |                   |                | ethm1rmg48xs9gmjlkd362uqcducxrdduf969a5xcmj |
 | Moai Finance        |                   |                | ethm1duzll9hadmzczg5ls46dupa43zuc98tfsag96e |
