@@ -1,12 +1,12 @@
 ---
 xep: 3
 title: Add EIP-5656 MCOPY Opcode Support via CapSign-Maintained evmos/go-ethereum Fork
-author: CapSign Protocol Team
+author: CapSign Inc.
 discussions-to: TBD
 status: Ready for Submission
 type: Network Upgrade
 category: Core
-created: 2025-01-16
+created: 2025-07-16
 requires: Network-wide validator upgrade
 ---
 
@@ -146,7 +146,7 @@ function testOverlappingMCopy() {
 }
 ```
 
-**✅ Test Results (January 17, 2025)**:
+**✅ Test Results (July 16, 2025)**:
 
 - Diamond proxy: ✅ Deployed successfully
 - Facet delegation: ✅ All function calls work
@@ -175,7 +175,7 @@ function testOverlappingMCopy() {
 - [x] Prepare comprehensive testing suite
 - [x] Document validator upgrade procedures
 
-**✅ PROOF OF CONCEPT COMPLETED (January 2025)**:
+**✅ PROOF OF CONCEPT COMPLETED (July 2025)**:
 
 - Successfully deployed Diamond proxy contracts on local testnet with Cancun hardfork support
 - Confirmed MCOPY opcode (0x5e) functionality with complex contract architectures
@@ -231,6 +231,6 @@ Copyright and related rights waived via [CC0](https://creativecommons.org/public
 ## References
 
 - [EIP-5656: MCOPY - Memory copying instruction](https://eips.ethereum.org/EIPS/eip-5656)
-- [CapSign Protocol Documentation](https://docs.capsign.io)
+- [CapSign Protocol Documentation](https://docs.capsign.com)
 - [evmos/go-ethereum Repository](https://github.com/evmos/go-ethereum)
 - [XRPL EVM Documentation](https://xrpl.org/docs/evm-sidechain/)
