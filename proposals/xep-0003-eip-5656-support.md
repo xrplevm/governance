@@ -234,3 +234,23 @@ Copyright and related rights waived via [CC0](https://creativecommons.org/public
 - [CapSign Protocol Documentation](https://docs.capsign.com)
 - [evmos/go-ethereum Repository](https://github.com/evmos/go-ethereum)
 - [XRPL EVM Documentation](https://xrpl.org/docs/evm-sidechain/)
+
+#### Build Process Changes:
+
+**xrplevm/node Updates Required**:
+```go
+// go.mod replacement update
+github.com/ethereum/go-ethereum => github.com/capsign/go-ethereum v1.10.26-capsign-mcopy.1
+```
+
+**Repository Dependencies**:
+- ✅ CapSign fork must be properly tagged and released
+- ✅ CI/CD pipelines updated to build with new dependency  
+- ✅ Validator deployment scripts updated
+- ✅ Documentation for upgrade process provided
+
+**Deployment Coordination**:
+- Network-wide validator upgrade required
+- Coordinated deployment to maintain consensus
+- Rollback plan for any issues during upgrade
+
