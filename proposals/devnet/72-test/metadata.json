@@ -1,0 +1,10 @@
+{
+  "title": "Test",
+  "authors": [
+    "test@xrplevm.org"
+  ],
+  "summary": "This is just a test",
+  "details": "This is just a test. Testing!",
+  "proposal_forum_url": "https://test.com",
+  "vote_option_context": "Test"
+}

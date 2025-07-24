@@ -1,0 +1,66 @@
+name: xrp-evm-validator
+
+on:
+  workflow_dispatch:
+    inputs:
+      network:
+        type: choice
+        description: Network to submit the proposal
+        options:
+          - devnet
+          - testnet
+          - mainnet
+      proposal:
+        description: Proposal name to submit
+        required: true
+
+jobs:
+  submit-proposal:
+    name: Submit proposal
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+    steps:
+      # Define global vars that will be used through the pipeline
+      - name: Defining global vars
+        shell: bash
+        id: env-vars
+        run: |
+          if [[ ${{ inputs.network || '""' }} == "mainnet" ]]; then
+            echo "NODE_URL=http://cosmos.xrplevm.org:26657" >> $GITHUB_OUTPUT
+            echo "GAS_PRICES=200000000000axrp" >> $GITHUB_OUTPUT
+          elif [[ ${{ inputs.network || '""' }} == "testnet" ]]; then
+            echo "NODE_URL=http://cosmos.testnet.xrplevm.org:26657" >> $GITHUB_OUTPUT
+            echo "GAS_PRICES=200000000000axrp" >> $GITHUB_OUTPUT
+          elif [[ ${{ inputs.network || '""' }} == "devnet" ]]; then
+            echo "NODE_URL=http://cosmos.devnet.xrplevm.org:26657" >> $GITHUB_OUTPUT
+            echo "GAS_PRICES=800000000000axrp" >> $GITHUB_OUTPUT
+          fi
+      # Checkout repository under $GITHUB_WORKSPACE path
+      - name: Repository checkout
+        uses: actions/checkout@v4
+
+      # Install exrpd
+      - name: Install exrpd
+        shell: bash
+        run: |
+          wget https://github.com/xrplevm/node/releases/download/v8.0.0/node_8.0.0_Linux_amd64.tar.gz
+          tar -xzf node_8.0.0_Linux_amd64.tar.gz
+          sudo mv /root/bin/exrpd /usr/local/bin/
+          chmod +x /usr/local/bin/exrpd
+          exrpd version
+
+      # Add deployer key
+      - name: Add deployer key
+        shell: bash
+        run: |
+          exrpd --keyring-backend test keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}
+
+      # Add deployer key
+      - name: Add deployer key
+        shell: bash
+        env:
+          NODE_URL: ${{ steps.env-vars.outputs.NODE_URL }}
+          GAS_PRICES: ${{ steps.env-vars.outputs.GAS_PRICES }}
+        run: |
+          exrpd --keyring test keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}
+          exrpd tx gov submit-proposal ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json --from deployer --keyring-backend test --gas-prices ${GAS_PRICES} --node ${NODE_URL} --yes
