@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1gavp35mdw5s8khlcwnywm3dywn2ylefv0fs9fp",
+      "description": {
+        "moniker": "blockscout",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "epmgDOfjliPczaxxihFqBwDmrNW9XXO5KzdtdKoCNQA="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add Blockscout validator",
+  "summary": "Blockscout is a robust open-source tool for exploring, confirming, and inspecting transactions on any EVM blockchain. This proposal adds them as a validator to the network."
+}
