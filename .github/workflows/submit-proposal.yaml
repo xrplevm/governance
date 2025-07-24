@@ -53,14 +53,16 @@ jobs:
       - name: Add deployer key
         shell: bash
         run: |
-          exrpd --keyring-backend test keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}
+          echo ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd --keyring-backend file keys unsafe-import-eth-key \
+            deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}
 
-      # Add deployer key
-      - name: Add deployer key
+      # Submit proposal
+      - name: Submit proposal
         shell: bash
         env:
           NODE_URL: ${{ steps.env-vars.outputs.NODE_URL }}
           GAS_PRICES: ${{ steps.env-vars.outputs.GAS_PRICES }}
         run: |
-          exrpd --keyring test keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}
-          exrpd tx gov submit-proposal ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json --from deployer --keyring-backend test --gas-prices ${GAS_PRICES} --node ${NODE_URL} --yes
+          echo ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd tx gov submit-proposal \
+            ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json \
+            --keyring-backend file --from deployer --gas-prices ${GAS_PRICES} --node ${NODE_URL} --yes
