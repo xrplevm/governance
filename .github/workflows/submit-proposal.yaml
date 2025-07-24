@@ -28,12 +28,15 @@ jobs:
           if [[ ${{ inputs.network || '""' }} == "mainnet" ]]; then
             echo "NODE_URL=http://cosmos.xrplevm.org:26657" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=200000000000axrp" >> $GITHUB_OUTPUT
+            echo "CHAIN_ID=xrplevm_1440000-1" >> $GITHUB_OUTPUT
           elif [[ ${{ inputs.network || '""' }} == "testnet" ]]; then
             echo "NODE_URL=http://cosmos.testnet.xrplevm.org:26657" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=200000000000axrp" >> $GITHUB_OUTPUT
+            echo "CHAIN_ID=xrplevm_1449000-1" >> $GITHUB_OUTPUT
           elif [[ ${{ inputs.network || '""' }} == "devnet" ]]; then
             echo "NODE_URL=http://cosmos.devnet.xrplevm.org:26657" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=800000000000axrp" >> $GITHUB_OUTPUT
+            echo "CHAIN_ID=xrplevm_1449000-1" >> $GITHUB_OUTPUT
           fi
       # Checkout repository under $GITHUB_WORKSPACE path
       - name: Repository checkout
@@ -64,4 +67,4 @@ jobs:
         run: |
           echo ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd tx gov submit-proposal --home $PWD/node \
             ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json \
-            --from deployer --gas-prices ${GAS_PRICES} --node ${NODE_URL} --yes
+            --from deployer --gas-prices ${GAS_PRICES} --node ${NODE_URL} --chain-id ${CHAIN_ID} --yes
