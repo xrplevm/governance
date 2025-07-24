@@ -64,6 +64,7 @@ jobs:
         env:
           NODE_URL: ${{ steps.env-vars.outputs.NODE_URL }}
           GAS_PRICES: ${{ steps.env-vars.outputs.GAS_PRICES }}
+          CHAIN_ID: ${{ steps.env-vars.outputs.CHAIN_ID }}
         run: |
           echo ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd tx gov submit-proposal --home $PWD/node \
             ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json \
