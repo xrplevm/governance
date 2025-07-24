@@ -36,7 +36,7 @@ jobs:
           elif [[ ${{ inputs.network || '""' }} == "devnet" ]]; then
             echo "NODE_URL=http://cosmos.devnet.xrplevm.org:26657" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=800000000000axrp" >> $GITHUB_OUTPUT
-            echo "CHAIN_ID=xrplevm_1440002-1" >> $GITHUB_OUTPUT
+            echo "CHAIN_ID=exrp_1440002-1" >> $GITHUB_OUTPUT
           fi
       # Checkout repository under $GITHUB_WORKSPACE path
       - name: Repository checkout
