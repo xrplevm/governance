@@ -53,7 +53,7 @@ jobs:
       - name: Add deployer key
         shell: bash
         run: |
-          bash -c "yes ${{ secrets.DEPLOYER_KEY_PASSWORD }}" | exrpd --home $PWD/node keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}
+          bash -c "yes ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd --home $PWD/node keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}"
 
       # Submit proposal
       - name: Submit proposal
