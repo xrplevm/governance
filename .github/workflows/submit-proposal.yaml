@@ -1,4 +1,4 @@
-name: xrp-evm-validator
+name: Submit proposal
 
 on:
   workflow_dispatch:
