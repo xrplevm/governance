@@ -45,7 +45,7 @@ jobs:
         run: |
           wget https://github.com/xrplevm/node/releases/download/v8.0.0/node_8.0.0_Linux_amd64.tar.gz
           tar -xzf node_8.0.0_Linux_amd64.tar.gz
-          sudo mv /root/bin/exrpd /usr/local/bin/
+          sudo mv ./bin/exrpd /usr/local/bin/
           chmod +x /usr/local/bin/exrpd
           exrpd version
 
