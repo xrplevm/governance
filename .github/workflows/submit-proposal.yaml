@@ -68,4 +68,4 @@ jobs:
         run: |
           echo ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd tx gov submit-proposal --home $PWD/node \
             ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json \
-            --from deployer --gas-prices ${GAS_PRICES} --node ${NODE_URL} --chain-id ${CHAIN_ID} --yes
+            --from deployer --gas 800000 --gas-prices ${GAS_PRICES} --node ${NODE_URL} --chain-id ${CHAIN_ID} --yes
