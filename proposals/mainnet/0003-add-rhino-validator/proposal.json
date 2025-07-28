@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm12yg0pvvehnr82dqgtjp6xrvhdgcrp7kmadgwmc",
+      "description": {
+        "moniker": "RHINO",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "U7e4pX2aDwxEStSFIysqa+g5VGx33GrhQtQ0oSK1J80="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add RHINO validator",
+  "summary": "Rhinostake LLC operates as \"RHINO\" and has been building trust into every block since 2020, delivering mission-critical validator operations, RPC services, and cross-chain connectivity solutions with proven 99.9% to 99.99% uptime commitments. We operate validators and comprehensive blockchain infrastructure across over 60 blockchain networks with over $300M in total value locked (TVL), specializing in enterprise-grade security protocols aligned with ISO 27001 standards and commercial SLA guarantees that serious blockchain projects demand.\n\nWith over five years of proven expertise in distributed systems and blockchain technology, RHINO combines technical excellence with enterprise accountability. Our support team ensures rapid incident response, and we actively contribute to ecosystem growth by providing free public API endpoints while delivering premium enterprise services to our partners. We're proud to serve as trusted infrastructure partners for serious blockchain projects that require reliability when it matters most."
+}
