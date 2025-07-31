@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm17jyye6zpx0ff265zlk9lcu8fl4p0rnr92xpxk5",
+      "description": {
+        "moniker": "kingnodes",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "k2LjAbH9Pmab79CGfwFltKOQjiY33zmuxqBCGoP3uTw="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add kingnodes validator",
+  "summary": "Our Australian owned and operated company, King Blockchain Pty Ltd operates validators and blockchain infrastructure as “Kingnodes” across the blockchain landscape.\n We are proud to operate our own hardware racked in a tier-4 datacentre located in Brisbane, Australia, as well as a fleet of rented/leased bare metal hardware across the globe.\n We have been in operation since late 2020 and operate validators on 15+ mainnet networks including Injective, Sei, dYdX, among others. We also operate associated blockchain infrastructure and services for a raft of cosmos SDK and EVM compatible blockchains. We provide B2B services such as high quality, distributed RPC systems for enterprise customers such as dYdX, as well as to individual teams. Our robust archive nodes and backup/snapshot solutions has provided blockchain history security to many chains in this time.\nWith our years of experience, we have developed resilient and comprehensive monitoring and alerting solutions for our operation and boast response times from the on-call engineer, on average, less than 1 hour.\nWe look forward to working with you all, and couldn’t be prouder to be here amongst long time friends, as well as fresh faces."
+}
