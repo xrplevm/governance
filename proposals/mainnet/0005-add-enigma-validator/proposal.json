@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1pzex5emt3vnr04ueyjfpnpdaxnan8r48wa5y2n",
+      "description": {
+        "moniker": "Enigma",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "/GfLjRnMrAEZnWfTHkVtpQbsEVeRKfkNec9LH0l9yMM="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add Enigma validator",
+  "summary": "Hey everyone !\n\nWe are Enigma, a professional infrastructure provider supporting over 50 blockchain networks and offering a wide range of services, including public infrastructure, indexing solutions, analytics, and community services.\n\nOur team has been delivering public infrastructure support for XRPL for some time now, providing resources such as public RPC/LCD endpoints , daily updated snapshots and managing the \u2060testnet faucet. \nYou can explore and use our services at: Enigma Validator - XRP Services.\n\nWe deployed also some services for the mainnet:\nRPC: https://xrp-rpc.enigma-validator.com/\nAPI: https://xrp-lcd.enigma-validator.com/\nJSON-RPC: https://xrp-evm-rpc.enigma-validator.com/\nSnapshot: https://enigma-validator.com/stake-with-us/xrp#services"
+}
