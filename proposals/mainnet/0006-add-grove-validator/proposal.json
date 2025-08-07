@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1kmfpujlgf4v9krlkqh9wfj608jc8nqr6yjcptd",
+      "description": {
+        "moniker": "Grove",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "Y+ktcL/etITdBAhvpWMVdDRiyqv5bjB3WsTZP7u67kI="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add Grove validator",
+  "summary": "Hi All, \n\nGrove is back again to become a validator on Mainnet. After a successful run on Testnet, we're excited by the opportunity to contribute to the POA in Mainnet and continue to deepen our partnerships with Peersyst, Ripple, and the XRPL Community.\nSo thrilled to have been a contributor to Testnet and to have launched our Cosmos SDK chain in similar timing to the XRPL EVM!"
+}
