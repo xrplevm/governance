@@ -4,10 +4,10 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 
 # Proposals directory - only maintainers can modify
-/proposals/ @maintainers
+/proposals/ @xrplevm/maintainers
 
 # Standards directory - only maintainers can modify  
-/standards/ @maintainers
+/standards/ @xrplevm/maintainers
 
 # Validators directory - only maintainers can modify
-/validators/ @maintainers
+/validators/ @xrplevm/maintainers
