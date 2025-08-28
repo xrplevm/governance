@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm10a0smqe4z2ct76ezhwzag5cq2pnel25qfp92t9",
+      "description": {
+        "moniker": "polkachu.com",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "tnRAdJiFjb6Nn+kYaxbDW3r/udh3aLPn/9F0v6YWi2Y="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add polkachu validator",
+  "summary": "Polkachu is founded by a group of technology professionals who focus on providing the highest quality infrastructure and services for public blockchain networks. Today, Polkachu supports 125 blockchain networks as validator / node operator. $172M crypto assets are staked with Polkachu on blockchains such as Aptos, Celestia, CosmosHub, dYdX, Injective, NEAR, and Solana. We look forward to working with the XRP community!"
+}
