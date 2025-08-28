@@ -1,0 +1,13 @@
+# CODEOWNERS file for governance repository
+# This file defines who owns specific directories and files in the repository
+# For more information about CODEOWNERS files, see:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Proposals directory - only maintainers can modify
+/proposals/ @xrplevm/maintainers
+
+# Standards directory - only maintainers can modify  
+/standards/ @xrplevm/maintainers
+
+# Validators directory - only maintainers can modify
+/validators/ @xrplevm/maintainers
