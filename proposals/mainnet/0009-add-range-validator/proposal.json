@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm1dwmk30474zfdqdwpm6y5tlcpe926s0j353slnl",
+        "description": {
+          "moniker": "Range",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "0C8P9a0DzOjwXsicwdrf/uSZjcNnaLah0SFYImx4kts="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add Range validator",
+    "summary": "We at Range would like to contribute to the XRPL EVM Mainnet. We've spun up a node and are now looking to take the next step by joining the active validator set. As a team with extensive experience in running blockchain infrastructure, we’re enthusiastic about contributing to the growth and stability of the XRPL EVM ecosystem. We are looking to integrate XRPL EVM into our public explorers and extend support across the tooling and infrastructure we maintain at Range.\n\nIf we are allowed to run a mainnet validator, we kindly request a small amount of poa tokens to initiate validator promotion."
+  }
+  
