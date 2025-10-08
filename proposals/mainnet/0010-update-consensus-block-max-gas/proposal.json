@@ -1,0 +1,30 @@
+{
+    "messages": [
+     {
+      "@type": "/cosmos.consensus.v1.MsgUpdateParams",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "block": {
+           "max_bytes": "22020096",
+           "max_gas": "21000000"
+         },
+       "evidence": {
+           "max_age_num_blocks": "100000",
+           "max_age_duration": "172800000000000ns",
+           "max_bytes": "1048576"
+       },
+       "validator": {
+       "pub_key_types": [
+           "ed25519"
+       ]
+       },
+      "abci": {
+           "vote_extensions_enable_height": "0"
+         }
+     }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "1000000000000000000000axrp",
+    "title": "Update Consensus Block Max Gas",
+    "summary": "During the genesis phase of mainnet deployments, the consensus parameters were not properly set. As a result, the provided configuration was overridden by default values from CometBFT. We propose to cap the block.max_gas value to 21,000,000, which approximates the gas required for ~1,000 typical Ethereum transactions.",
+    "expedited": true
+   }
