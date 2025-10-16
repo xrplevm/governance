@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm1aqhjmqxqtyjxnl963ap6qlvd0ups6eu88apk54",
+        "description": {
+          "moniker": "purple.markets",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "6+mfPv3OyqwoCfO9PJNf5GRRGfnVVAHK9dsr9DuKCl8="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add purple.markets validator",
+    "summary": "Development of singular and highly complex technological projects."
+  }
+  
