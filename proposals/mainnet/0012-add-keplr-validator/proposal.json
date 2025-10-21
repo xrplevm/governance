@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm14u297hphr35w6mnr0yhjk092084s0tayr5wz9z",
+        "description": {
+          "moniker": "Keplr",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "o4/odOZKTTA3W9XJ9R6muBbTbbs3aA2leRTZ1Rj1OlQ="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add Keplr validator",
+    "summary": "Keplr is the largest wallet in the Cosmos ecosystem, trusted by over 2 million users. It also supports EVM and non-EVM chains, including Bitcoin and Starknet. In addition to the core Keplr Wallet, we offer a comprehensive suite of companion products, including Keplr Mobile, the Dashboard, the Multisig Dashboard, and the Validator Dashboard. Beyond our user-facing products, Keplr Infra has been actively operating as a validator on over 20 networks, consistently ranking among the top-tier validators. We also provide high-SLA RPC infrastructure for over 50 Cosmos-based chains and more than 7 EVM chains, dedicated to Keplr users. Our infrastructure spans over 150 servers across 6+ cloud and bare-metal providers — including our own on-premise servers — and has been operated reliably for over three years. It is enterprise-grade, ensuring high availability through finely tailored optimizations and 24/7 monitoring."
+  }
+  
