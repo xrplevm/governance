@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm18f9y5nt6xywlrcd7j0t23luhrpjxyasrypr8mt",
+        "description": {
+          "moniker": "Imperator",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "IK8gxpfHF9Lw2PxodLARoFKoM1LE9bE5Wmdl5D0gWAk="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add Imperator validator",
+    "summary": "Imperator is a trusted PoS validator and blockchain infrastructure service provider specializing in node operations, RPC endpoints, dedicated nodes, relayers, data APIs, and indexers. With 4 years of experience in end-to-end infrastructure management and scalability support for blockchain foundations, we proudly support 50+ networks with over $400M in TVL. Our clients include some of the most respected names in the industry, such as Distributed Global, Flowdesk, Selini Capital, the dYdX Trading Team & Foundation, BitGo, Anchorage, Copper, Axelar, Leap Wallet, and many others."
+  }
+  
