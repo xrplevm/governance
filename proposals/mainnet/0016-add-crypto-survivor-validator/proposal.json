@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm16f2ll6esyq4qqjwktm68s0ryvadktua0fk267l",
+        "description": {
+          "moniker": "Crypto Survivor",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "zV0EARz+YF33syaY+fiTehilkIWfsIW6+Mu2zKGslPg="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add Crypto Survivor validator",
+    "summary": "Crypto Survivor has been running xrpl evm nodes since devnet launched. Crypto Survivor has been deeply involved in the xrpl community since 2017. Crypto Survivor is a tradesperson who works in the regulatory compliance industry. Crypto Survivor enjoys working with code in his spare time and in addition to maintaining two servers that run multiple instances of testnet and mainnet for the xrpl evm blockchain, he is also building an app using Unity 6 and intends to release it for testing in late 2026."
+  }
+  
