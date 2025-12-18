@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm154ysyzvcjqz49wtlq8cr3v7877dpqtaq66zvxd",
+        "description": {
+          "moniker": "bkgeomatics",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "/nReh7Lhfvc6YpMxYAeCQCgGnaqlQwnHLj8ffIhTrQY="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add bkgeomatics validator",
+    "summary": "BKGeomatic is running 5 nodes for the evernode project, 1 node for Xahau Network, Nulink , CrossFi and Dusk projects. A geomatician and manager of an Engineering office, a crypto enthousiast and an XRP holder since 2020. Very active in the XRPL EVM since the Devnet launch."
+  }
+  
