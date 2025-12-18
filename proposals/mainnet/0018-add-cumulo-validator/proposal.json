@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm1e5l0hp498n03yedhquydfjqgnc3evzfzd4e7az",
+        "description": {
+          "moniker": "Cumulo",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "ufANYesYu4THdA6cW8SNXvCN6bIDvikN573nAkLbq0A="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add Cumulo validator",
+    "summary": "Cumulo is a professional PoS validator and blockchain infrastructure provider operating production infrastructure across 10+ networks, from early testnets to mainnet. We run validators, different type of nodes, monitoring systems, dashboards, and custom-built tooling across modular, EVM, Cosmos-SDK, and emerging L1 ecosystems. As a community partner, we develop technical tools, publish validator guides, and organize events and hackathons to strengthen ecosystems and support long-term sustainability. Cumulo works closely with protocol teams, foundations, builders, and communities to ensure infrastructure is not just running—but understood, accessible, and aligned with the network’s growth."
+  }
+  
