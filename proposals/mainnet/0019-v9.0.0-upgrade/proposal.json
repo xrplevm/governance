@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "plan": {
+        "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/xrplevm/node/releases/download/v9.0.2/node_9.0.2_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/xrplevm/node/releases/download/v9.0.2/node_9.0.2_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/xrplevm/node/releases/download/v9.0.2/node_9.0.2_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/xrplevm/node/releases/download/v9.0.2/node_9.0.2_Darwin_arm64.tar.gz\"}}",
+        "name": "v9.0.0",
+        "time": "0001-01-01T00:00:00Z",
+        "height": "4233853",
+        "upgraded_client_state": null
+      },
+      "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843"
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "XRPL EVM v9.0.0: Migration from Evmos to Cosmos EVM v0.4.2",
+  "summary": "The XRPL EVM sidechain chain upgrade v9.0.0 is ready to migrate Evmos—an unmaintained dependency—to Cosmos EVM v0.4.2, a fully supported fork of Evmos.\nThis is more than just a technical upgrade. By moving to Cosmos EVM, the XRPL EVM ecosystem gains:\n - Long-term sustainability: Evmos had become unsupported, leaving chains that depended on it without a clear upgrade path. Cosmos EVM is actively maintained, ensuring compatibility with the broader Cosmos and Ethereum ecosystems.\n - Future-proof development: Cosmos EVM continuously integrates Ethereum standards (EIPs) and protocol upgrades. This ensures that XRPL EVM applications remain interoperable with Ethereum tooling.\n - Extended functionality: The migration introduces new ERC-20 capabilities such as mint, burn, and ownership transfer—giving developers and token projects more flexibility.\n - Alignment with the Cosmos ecosystem: By standardizing on Cosmos EVM, XRPL EVM can more easily integrate with other Cosmos SDK chains, IBC modules, and upcoming interoperability upgrades.\n\nRead more here: https://x.com/Peersyst/status/1971139829145514317"
+}
