@@ -1,0 +1,14 @@
+{
+    "messages": [
+     {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1y69ary732dmngmj2g2e8m2ssedugya4mvh4nlx"
+     }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Remove CryptoCrew validator",
+    "summary": "The validator CryptoCrew was onboarded using a Ledger-based secp256k1 key with coin-type 118, imported via the Cosmos Ledger app. While the key import succeeded, this key type is not supported for transaction signing on XRPL EVM, which uses coin-type 60 (Ethermint keys).Due to this limitation:The validator cannot sign transactions (including validator operations).Ledger signing and CosmJS are not supported for this key type on Cosmos EVM chains.Supporting secp256k1 / coin-type 118 would require significant development effort and is not currently supported by any Cosmos EVM chain.As a result, the validator operator is unable to control or maintain the validator.Proposed action: Remove (offboard) the current CryptoCrew validator to allow re-onboarding with a supported coin-type 60 (Ethermint) key, restoring full operational control.This removal is a technical necessity, not due to misbehavior, and is agreed upon by the validator operator.",
+    "expedited": false
+}
