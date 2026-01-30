@@ -1,0 +1,25 @@
+{
+    "messages": [
+      {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm156swn0y6xr6t2mzdjhq7vr509d7wult2juvyms",
+        "description": {
+          "moniker": "Flowdesk",
+          "identity": "",
+          "website": "",
+          "security_contact": "",
+          "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "VX8VVCutFCmkrYx30bWvrFhPYREUt+4leerz3NLBs7g="
+        }
+      }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add Flowdesk validator",
+    "summary": "Flowdesk is a regulated digital asset service provider specializing in liquidity provision, OTC trading, treasury management, and proprietary trading technology for token issuers, foundations, exchanges, and institutions. Operating 24/7/365 with global coverage across five offices and registered as a Digital Asset Service Provider with the Financial Market Authority of France, the firm delivers deep liquidity, competitive pricing across spot, derivatives, and credit markets, while leveraging advanced execution algorithms and risk management tools to minimize market impact and enable scalable on- and off-chain trading strategies with maximum confidence and transparency, ultimately building institutional grade infrastructure to support blockchain as the foundation of tomorrow's financial system."
+  }
+  
