@@ -1,0 +1,30 @@
+{
+    "messages": [
+     {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethmvaloper1y69ary732dmngmj2g2e8m2ssedugya4mr8ll8m"
+     },
+     {
+        "@type": "/poa.MsgAddValidator",
+        "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+        "validator_address": "ethm1pmld3lwkf0thqu6deeq6lvrn2tswtf8mq44uem",
+        "description": {
+         "moniker": "CryptoCrew",
+         "identity": "",
+         "website": "",
+         "security_contact": "",
+         "details": ""
+        },
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "e09XKOzIbZ/4MLEeexiDrIiLHsFHvbLhmkQ85fe8+v4="
+        }
+       }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Replace CryptoCrew validator",
+    "summary": "CryptoCrew Validators is an Austrian-based Web3 infrastructure provider specializing in secure, transparent validation, IBC relaying, and node services. Since 2021, we have secured over USD 40 million across 40+ interchain networks, facilitated millions of IBC transactions, and operate a global network of decentralized bare-metal servers with enterprise-grade security and monitoring. As a core protocol contributor, we maintain strategic partnerships with foundations and liquid staking protocols, support Interchain Security Solutions and onboarding for consumer chains, and have received an AAA rating as a Verified Staking Provider on stakingrewards.com: https://www.stakingrewards.com/provider/cryptocrew-validators.",
+    "expedited": false
+}
