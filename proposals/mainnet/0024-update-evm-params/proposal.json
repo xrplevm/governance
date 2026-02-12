@@ -1,0 +1,71 @@
+{
+  "messages": [
+    {
+      "@type": "/ethermint.evm.v1.MsgUpdateParams",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "params": {
+        "evm_denom": "axrp",
+        "extra_eips": [
+          "ethereum_3855"
+        ],
+        "chain_config": {
+          "homestead_block": "0",
+          "dao_fork_block": "0",
+          "dao_fork_support": true,
+          "eip150_block": "0",
+          "eip150_hash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "eip155_block": "0",
+          "eip158_block": "0",
+          "byzantium_block": "0",
+          "constantinople_block": "0",
+          "petersburg_block": "0",
+          "istanbul_block": "0",
+          "muir_glacier_block": "0",
+          "berlin_block": "0",
+          "london_block": "0",
+          "arrow_glacier_block": "0",
+          "gray_glacier_block": "0",
+          "merge_netsplit_block": "0",
+          "shanghai_block": "0",
+          "cancun_block": "0"
+        },
+        "allow_unprotected_txs": true,
+        "evm_channels": [],
+        "access_control": {
+          "create": {
+            "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+            "access_control_list": []
+          },
+          "call": {
+            "access_type": "ACCESS_TYPE_PERMISSIONLESS",
+            "access_control_list": []
+          }
+        },
+        "active_static_precompiles": [
+          "0x0000000000000000000000000000000000000100",
+          "0x0000000000000000000000000000000000000400",
+          "0x0000000000000000000000000000000000000804",
+          "0x0000000000000000000000000000000000000805"
+        ]
+      }
+    },
+    {
+      "@type": "/ethermint.feemarket.v1.MsgUpdateParams",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 4,
+        "enable_height": "0",
+        "base_fee": "100000000000",
+        "min_gas_price": "100000000000.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      }
+    }
+  ],
+  "title": "Update EVM params to allow the deployment of https://github.com/Arachnid/deterministic-deployment-proxy",
+  "summary": "This governance proposal updates the chain’s evm and feemarket module parameters to enable deployment of the Deterministic Deployment Proxy (Arachnid).\nIt sets allow_unprotected_txs = true to permit legacy, pre-EIP155 (unprotected) transactions required by the proxy’s deployment flow.\nIt also reduces base_fee to 100 GWei to ensure the deployment transaction meets fee constraints.\nNo other EVM behavior or chain parameters are modified. Once passed, the proxy can be deployed and used for deterministic contract deployments across environments.",
+  "metadata": "ipfs://cid",
+  "deposit": "1000000000000000000000axrp",
+  "expedited": true
+}
