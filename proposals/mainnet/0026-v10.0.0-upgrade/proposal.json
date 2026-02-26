@@ -5,7 +5,7 @@
         "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/xrplevm/node/releases/download/v10.0.2/node_10.0.2_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/xrplevm/node/releases/download/v10.0.2/node_10.0.2_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/xrplevm/node/releases/download/v10.0.2/node_10.0.2_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/xrplevm/node/releases/download/v10.0.2/node_10.0.2_Darwin_arm64.tar.gz\"}}",
         "name": "v10.0.0",
         "time": "0001-01-01T00:00:00Z",
-        "height": "4749700",
+        "height": "4749000",
         "upgraded_client_state": null
       },
       "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
