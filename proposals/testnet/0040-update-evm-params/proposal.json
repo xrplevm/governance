@@ -1,7 +1,7 @@
 {
   "messages": [
     {
-      "@type": "/ethermint.feemarket.v1.MsgUpdateParams",
+      "@type": "/cosmos.evm.feemarket.v1.MsgUpdateParams",
       "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
       "params": {
         "no_base_fee": false,
