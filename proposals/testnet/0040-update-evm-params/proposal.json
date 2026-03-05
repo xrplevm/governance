@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "@type": "/ethermint.feemarket.v1.MsgUpdateParams",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "params": {
+        "no_base_fee": false,
+        "base_fee_change_denominator": 8,
+        "elasticity_multiplier": 4,
+        "enable_height": "0",
+        "base_fee": "100000000000.000000000000000000",
+        "min_gas_price": "100000000000.000000000000000000",
+        "min_gas_multiplier": "0.500000000000000000"
+      }
+    }
+  ],
+  "title": "Update EVM params to allow the deployment of https://github.com/Arachnid/deterministic-deployment-proxy",
+  "summary": "This governance proposal updates the chain’s feemarket module parameters to enable deployment of the Deterministic Deployment Proxy (Arachnid).\n\nIt reduces base_fee to 100 GWei to ensure the deployment transaction meets fee constraints.\n Once passed, the proxy can be deployed and used for deterministic contract deployments across environments.",
+  "metadata": "ipfs://cid",
+  "deposit": "1000000000000000000000axrp",
+  "expedited": true
+}
