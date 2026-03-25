@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1y69ary732dmngmj2g2e8m2ssedugya4mvh4nlx"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1kmfpujlgf4v9krlkqh9wfj608jc8nqr6yjcptd"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm12cmu48xckphfe2a069lwh0kjgeeav7mpwaym4f"
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Remove 3 validators",
+  "summary": "Remove multiple validators",
+  "expedited": false
+}
