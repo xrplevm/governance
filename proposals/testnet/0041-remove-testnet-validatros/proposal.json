@@ -1,0 +1,43 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1jtzqeltmemzc4gqrgxway63eu2s9gv0v6ea7r9"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1x6484gj63ctd9f9nz49hjtkl9wxhtqtfg3njff"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1duzll9hadmzczg5ls46dupa43zuc98tfsag96e"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm17tgqrthpgmd42655de86l78lfdssketv8tvz8r"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1p0u8nwst0eew0h20qadk9820pzzvxpe934muup"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1cjf4dxf0cz08rgcdd49hv2zn5xqj99xvh22g8a"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1sgypxlm5n6z89mraqhnx0e35uedl504qfuhyp4"
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Remove multiple testnet validators",
+  "summary": "Remove 7 validators from testnet"
+}
