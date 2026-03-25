@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethmvaloper1kmfpujlgf4v9krlkqh9wfj608jc8nqr6tzjdns"
+    },
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethmvaloper12cmu48xckphfe2a069lwh0kjgeeav7mppdwhd5"
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Remove Informal Systems and Grove validators",
+  "summary": "This proposal removes the Informal Systems and Grove validators from the validator set. These validators have ceased their activities as validators and have communicated that they do not wish to continue operating validator infrastructure for the network. The purpose of this proposal is to keep the validator set aligned with the set of actively participating operators.",
+  "expedited": false
+}
