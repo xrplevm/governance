@@ -1,0 +1,21 @@
+{
+    "messages": [
+        {
+            "@type": "/ibc.core.client.v1.MsgRecoverClient",
+            "signer": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "subject_client_id": "07-tendermint-0",
+            "substitute_client_id": "07-tendermint-8"
+        },
+        {
+            "@type": "/ibc.core.client.v1.MsgRecoverClient",
+            "signer": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "subject_client_id": "07-tendermint-1",
+            "substitute_client_id": "07-tendermint-7"
+        }
+    ],
+    "metadata": "",
+    "title": "Recover IBC light client for Injective & Elys Network",
+    "summary": "This proposal updates the expired IBC light client `07-tendermint-0` for counterparty chain `injective-1` with the state of the substitute client `07-tendermint-8`, and IBC light client `07-tendermint-1` for counterparty chain `elys-1` with the state of the substitute client `07-tendermint-7`",
+    "deposit": "500000000000000000000axrp",
+    "expedited": false
+}

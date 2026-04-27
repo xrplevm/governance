@@ -1,0 +1,22 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.feemarket.v1.MsgUpdateParams",
+            "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "params": {
+                "no_base_fee": false,
+                "base_fee_change_denominator": 8,
+                "elasticity_multiplier": 4,
+                "enable_height": "0",
+                "base_fee": "571000000",
+                "min_gas_price": "571000000.000000000000000000",
+                "min_gas_multiplier": "0.500000000000000000"
+            }
+        }
+    ],
+    "title": "Aligning XRPL EVM Fees with XRPL Mainnet for Competitiveness and Growth",
+    "summary": "This proposal aims to reduce XRPL EVM transaction fees to align with XRPL mainnet’s low-cost structure, adding only programmability overhead. Lower fees will improve competitiveness, drive adoption, and address current market conditions where other EVM networks have become significantly cheaper while XRP’s valuation keeps fees relatively high.",
+    "metadata": "ipfs://cid",
+    "deposit": "500000000000000000000axrp",
+    "expedited": false
+}
