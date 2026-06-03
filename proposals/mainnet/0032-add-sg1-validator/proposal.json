@@ -1,0 +1,25 @@
+{
+    "messages": [
+        {
+            "@type": "/poa.MsgAddValidator",
+            "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "validator_address": "ethm1vfs63duem4qukncpen2t7cfsvj0wfl5sllvdhc",
+            "description": {
+                "moniker": "SG-1",
+                "identity": "",
+                "website": "",
+                "security_contact": "",
+                "details": ""
+            },
+            "pubkey": {
+                "@type": "/cosmos.crypto.ed25519.PubKey",
+                "key": "xj8Gt7pKkj1YcfjK+qG79LA9x7SGcnifahfO5YZ/LeU="
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "Add SG-1 validator",
+    "summary": "This proposal adds SG-1 as a new validator to the network."
+}
+
