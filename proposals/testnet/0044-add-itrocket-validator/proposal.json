@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1y5neqvc5nfewkztjt5hr259faym7d2l9d0rr96",
+      "description": {
+        "moniker": "ITRocket",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "9nnSv+7ql4HCMbUq6RLrbLx4QUW5JMOJo1pF2KZO2ms="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add ITRocket validator",
+  "summary": "This proposal adds ITRocket as a new validator to the network."
+}

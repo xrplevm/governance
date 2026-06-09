@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1xytuj8tuspaeelxsmmpn4z8lrqsks25csq9nqz",
+      "description": {
+        "moniker": "Atlas Staking",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "qTcvOgLyg7OEahqfKeyHu2dejqgHqYu1WaVhLK4jmYI="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add Atlas Staking validator",
+  "summary": "This proposal adds Atlas Staking as a new validator to the network."
+}
