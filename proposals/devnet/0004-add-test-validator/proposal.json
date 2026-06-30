@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm1dkxhzm2ztx4qpfcpsj8d2xtjry0ppzmcshz4y5",
+      "description": {
+        "moniker": "devnet-test-validator",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "YYpAJiOmbKtXSCAtEemZhzT3GDdKF8PpVA7bGTiPlTg="
+      }
+    }
+  ],
+  "metadata": "",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add devnet test validator",
+  "summary": "Add a test validator to devnet to ensure selfremovevalidator works correctly"
+}
