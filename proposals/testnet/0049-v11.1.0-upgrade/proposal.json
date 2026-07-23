@@ -1,0 +1,70 @@
+{
+    "messages": [
+        {
+            "@type": "/ibc.core.client.v1.MsgIBCSoftwareUpgrade",
+            "plan": {
+                "name": "v11.1.0",
+                "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/xrplevm/node/releases/download/v11.1.0/node_11.1.0_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/xrplevm/node/releases/download/v11.1.0/node_11.1.0_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/xrplevm/node/releases/download/v11.1.0/node_11.1.0_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/xrplevm/node/releases/download/v11.1.0/node_11.1.0_Darwin_arm64.tar.gz\"}}",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "8158200",
+                "upgraded_client_state": null
+            },
+            "upgraded_client_state": {
+                "@type": "/ibc.lightclients.tendermint.v1.ClientState",
+                "chain_id": "xrplevm_1449000-1",
+                "unbonding_period": "604800s",
+                "latest_height": {
+                    "revision_number": "1",
+                    "revision_height": "8158201"
+                },
+                "proof_specs": [
+                    {
+                        "leaf_spec": {
+                            "hash": "SHA256",
+                            "prehash_key": "NO_HASH",
+                            "prehash_value": "SHA256",
+                            "length": "VAR_PROTO",
+                            "prefix": "AA=="
+                        },
+                        "inner_spec": {
+                            "child_order": [0, 1],
+                            "child_size": 33,
+                            "min_prefix_length": 4,
+                            "max_prefix_length": 12,
+                            "empty_child": null,
+                            "hash": "SHA256"
+                        },
+                        "max_depth": 0,
+                        "min_depth": 0
+                    },
+                    {
+                        "leaf_spec": {
+                            "hash": "SHA256",
+                            "prehash_key": "NO_HASH",
+                            "prehash_value": "SHA256",
+                            "length": "VAR_PROTO",
+                            "prefix": "AA=="
+                        },
+                        "inner_spec": {
+                            "child_order": [0, 1],
+                            "child_size": 32,
+                            "min_prefix_length": 1,
+                            "max_prefix_length": 1,
+                            "empty_child": null,
+                            "hash": "SHA256"
+                        },
+                        "max_depth": 0,
+                        "min_depth": 0
+                    }
+                ],
+                "upgrade_path": ["upgrade", "upgradedIBCState"]
+            },
+            "signer": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843"
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "500000000000000000000axrp",
+    "title": "XRPL EVM v11.1.0: ICA Host Lockdown, Unbonding Update, and Stranded XRP Recovery",
+    "summary": "The XRPL EVM sidechain chain upgrade v11.1.0 is ready to disable the Interchain Accounts host module, set the staking unbonding time to one week, and return the XRP locked in the Elys channel escrow to its rightful withdrawal address on each network.",
+    "expedited": false
+}

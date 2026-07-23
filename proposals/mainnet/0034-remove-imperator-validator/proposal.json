@@ -1,0 +1,13 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgRemoveValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethmvaloper18f9y5nt6xywlrcd7j0t23luhrpjxyasrt3ftrk"
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Remove Imperator validator",
+  "summary": "This proposal removes Imperator validator from the validator set. This validator have ceased their activities as validators. The purpose of this proposal is to keep the validator set aligned with the set of actively participating operators."
+}
