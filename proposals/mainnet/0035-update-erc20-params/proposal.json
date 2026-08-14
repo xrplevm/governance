@@ -1,0 +1,17 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.evm.erc20.v1.MsgUpdateParams",
+            "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "params": {
+                "enable_erc20": true,
+                "permissionless_registration": false
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "1000000000000000000000axrp",
+    "title": "ERC20 Registration Parameter Update",
+    "summary": "This proposal updates the ERC20 module configuration to disable permissionless token pair registration. Following execution, ERC20 registrations will require the appropriate authorized process.",
+    "expedited": true
+}
