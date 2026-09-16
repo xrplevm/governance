@@ -1,0 +1,17 @@
+{
+    "messages": [
+        {
+            "@type": "/ibc.applications.interchain_accounts.host.v1.MsgUpdateParams",
+            "signer": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "params": {
+                "host_enabled": false,
+                "allow_messages": []
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "1000000000000000000000axrp",
+    "title": "Disable the Interchain Accounts Host Module",
+    "summary": "This proposal disables the ICS-27 Interchain Accounts (ICA) host submodule by setting host_enabled to false and clearing its allow list. The module is being deprecated: it is not part of the chain's actively supported feature set and is not in use. Disabling it removes an unused module surface and simplifies node configuration and maintenance. The ICA controller submodule is not enabled on this chain, so this action fully disables Interchain Accounts. The change is reversible through a future governance proposal should the functionality be needed again.",
+    "expedited": true
+}
