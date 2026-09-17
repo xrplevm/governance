@@ -14,6 +14,9 @@ on:
         description: Proposal name to submit
         required: true
 
+permissions:
+  contents: read
+
 jobs:
   submit-proposal:
     name: Submit proposal
@@ -21,23 +24,31 @@ jobs:
     timeout-minutes: 1
     steps:
       # Define global vars that will be used through the pipeline
+      # The network is read from the environment (not interpolated into the
+      # shell) to avoid command injection via the workflow_dispatch input.
       - name: Defining global vars
         shell: bash
         id: env-vars
+        env:
+          NETWORK: ${{ inputs.network || '' }}
         run: |
-          if [[ ${{ inputs.network || '""' }} == "mainnet" ]]; then
+          if [[ "${NETWORK}" == "mainnet" ]]; then
             echo "NODE_URL=https://cosmos-rpc.xrplevm.org" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=200000000000axrp" >> $GITHUB_OUTPUT
             echo "CHAIN_ID=xrplevm_1440000-1" >> $GITHUB_OUTPUT
-          elif [[ ${{ inputs.network || '""' }} == "testnet" ]]; then
+          elif [[ "${NETWORK}" == "testnet" ]]; then
             echo "NODE_URL=https://cosmos-rpc.testnet.xrplevm.org" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=200000000000axrp" >> $GITHUB_OUTPUT
             echo "CHAIN_ID=xrplevm_1449000-1" >> $GITHUB_OUTPUT
-          elif [[ ${{ inputs.network || '""' }} == "devnet" ]]; then
+          elif [[ "${NETWORK}" == "devnet" ]]; then
             echo "NODE_URL=https://cosmos-rpc.devnet.xrplevm.org" >> $GITHUB_OUTPUT
             echo "GAS_PRICES=800000000000axrp" >> $GITHUB_OUTPUT
             echo "CHAIN_ID=xrplevm_1449900-1" >> $GITHUB_OUTPUT
+          else
+            echo "Unsupported network: ${NETWORK}" >&2
+            exit 1
           fi
+
       # Checkout repository under $GITHUB_WORKSPACE path
       - name: Repository checkout
         uses: actions/checkout@v4
@@ -53,10 +64,15 @@ jobs:
           exrpd version
 
       # Add deployer key
+      # Secrets are passed through the environment so they never appear in the
+      # process list, shell history or masked-run logs.
       - name: Add deployer key
         shell: bash
+        env:
+          DEPLOYER_KEY_PASSWORD: ${{ secrets.DEPLOYER_KEY_PASSWORD }}
+          DEPLOYER_PRIVATE_KEY: ${{ secrets.DEPLOYER_PRIVATE_KEY }}
         run: |
-          bash -c "yes ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd --home $PWD/node keys unsafe-import-eth-key deployer ${{ secrets.DEPLOYER_PRIVATE_KEY }}"
+          yes "${DEPLOYER_KEY_PASSWORD}" | exrpd --home "$PWD/node" keys unsafe-import-eth-key deployer "${DEPLOYER_PRIVATE_KEY}"
 
       # Submit proposal
       - name: Submit proposal
@@ -65,7 +81,10 @@ jobs:
           NODE_URL: ${{ steps.env-vars.outputs.NODE_URL }}
           GAS_PRICES: ${{ steps.env-vars.outputs.GAS_PRICES }}
           CHAIN_ID: ${{ steps.env-vars.outputs.CHAIN_ID }}
+          DEPLOYER_KEY_PASSWORD: ${{ secrets.DEPLOYER_KEY_PASSWORD }}
+          NETWORK: ${{ inputs.network }}
+          PROPOSAL: ${{ inputs.proposal }}
         run: |
-          echo ${{ secrets.DEPLOYER_KEY_PASSWORD }} | exrpd tx gov submit-proposal --home $PWD/node \
-            ./proposals/${{ inputs.network }}/${{ inputs.proposal }}/proposal.json \
-            --from deployer --gas 800000 --gas-prices ${GAS_PRICES} --node ${NODE_URL} --chain-id ${CHAIN_ID} --yes
+          echo "${DEPLOYER_KEY_PASSWORD}" | exrpd tx gov submit-proposal --home "$PWD/node" \
+            "./proposals/${NETWORK}/${PROPOSAL}/proposal.json" \
+            --from deployer --gas 800000 --gas-prices "${GAS_PRICES}" --node "${NODE_URL}" --chain-id "${CHAIN_ID}" --yes
