@@ -3,12 +3,12 @@
     {
       "@type": "/poa.MsgRemoveValidator",
       "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
-      "validator_address": "ethmvaloper1ynpxrw0skflpvegz8s5p0hedcmsg3lhlemfd9r"
+      "validator_address": "ethm1ynpxrw0skflpvegz8s5p0hedcmsg3lhlktrpa7"
     },
     {
       "@type": "/poa.MsgRemoveValidator",
       "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
-      "validator_address": "ethmvaloper14uhx3rxul40vhxf35w7gk3axjppmeydyyhxftp"
+      "validator_address": "ethm14uhx3rxul40vhxf35w7gk3axjppmeydyt8v9nu"
     }
   ],
   "metadata": "ipfs://CID",
