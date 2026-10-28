@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "@type": "/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade",
+            "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+            "plan": {
+                "name": "v11.3.0",
+                "info": "{\"binaries\":{\"linux/amd64\":\"https://github.com/xrplevm/node/releases/download/v11.3.0/node_11.3.0_Linux_amd64.tar.gz\",\"linux/arm64\":\"https://github.com/xrplevm/node/releases/download/v11.3.0/node_11.3.0_Linux_arm64.tar.gz\",\"darwin/amd64\":\"https://github.com/xrplevm/node/releases/download/v11.3.0/node_11.3.0_Darwin_amd64.tar.gz\",\"darwin/arm64\":\"https://github.com/xrplevm/node/releases/download/v11.3.0/node_11.3.0_Darwin_arm64.tar.gz\"}}",
+                "time": "0001-01-01T00:00:00Z",
+                "height": "8367050",
+                "upgraded_client_state": null
+            }
+        }
+    ],
+    "metadata": "ipfs://CID",
+    "deposit": "1000000000000000000000axrp",
+    "title": "XRPL EVM v11.3.0: Cosmos EVM Update and Sign Mode Cleanup",
+    "summary": "This expedited proposal schedules the XRPL EVM v11.3.0 network upgrade at block height 8,367,050. The upgrade deploys node release v11.3.0, includes an update to Cosmos EVM, and removes the unused SIGN_MODE_DIRECT_AUX sign mode.",
+    "expedited": true
+}
