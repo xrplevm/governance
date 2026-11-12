@@ -1,0 +1,24 @@
+{
+  "messages": [
+    {
+      "@type": "/poa.MsgAddValidator",
+      "authority": "ethm10d07y265gmmuvt4z0w9aw880jnsr700jpva843",
+      "validator_address": "ethm14jlknjvgr365qs958rzlpjd0vwpx3e8aka5e36",
+      "description": {
+        "moniker": "Nodes Hub",
+        "identity": "",
+        "website": "",
+        "security_contact": "",
+        "details": ""
+      },
+      "pubkey": {
+        "@type": "/cosmos.crypto.ed25519.PubKey",
+        "key": "Yk6qbPMxGbyV47e7NBdnE3C35OupENl+O4ofnDmUaLA="
+      }
+    }
+  ],
+  "metadata": "ipfs://CID",
+  "deposit": "500000000000000000000axrp",
+  "title": "Add Nodes Hub validator",
+  "summary": "This proposal adds Nodes Hub as a new validator to the network."
+}
