@@ -15,6 +15,6 @@
     "metadata": "ipfs://CID",
     "deposit": "1000000000000000000000axrp",
     "title": "XRPL EVM v11.5.0: Cosmos EVM Update",
-    "summary": "This expedited proposal schedules the XRPL EVM v11.5.0 network upgrade at block height 9,693,413. The upgrade deploys node release v11.5.0, includes an update to Cosmos EVM.",
+    "summary": "This expedited proposal schedules the XRPL EVM v11.5.0 network upgrade at block height 9,693,400. The upgrade deploys node release v11.5.0, includes an update to Cosmos EVM.",
     "expedited": true
 }
